@@ -1,0 +1,11 @@
+node_modules/
+dist/
+tests/.compiled/
+*.log
+.DS_Store
+.env
+.env.local
+.vite/
+.deploy_manifest_*.json
+.deploy.env
+__pycache__/
