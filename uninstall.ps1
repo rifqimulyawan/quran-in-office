@@ -1,4 +1,4 @@
-# Quran in Word - Uninstaller Script
+# Quran in Office - Uninstaller Script
 $ErrorActionPreference = "Stop"
 $ProjectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 
@@ -8,7 +8,7 @@ function Write-OK($msg)   { Write-Host "[OK] $msg" -ForegroundColor Green }
 # ── 1. Remove sideloaded add-in from Word ─────────────────────────
 Write-Step "Menghapus add-in dari Word..."
 npx --yes office-addin-sideload --manifest "$ProjectRoot\manifest.xml" --remove 2>&1 | Out-Host
-Write-OK "Add-in dihapus dari Word (jika ada)."
+Write-OK "Add-in dihapus dari Word dan PowerPoint (jika ada)."
 
 # ── 2. Remove dev certificate ─────────────────────────────────────
 Write-Step "Menghapus SSL certificate..."
