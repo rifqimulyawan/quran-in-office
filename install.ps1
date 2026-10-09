@@ -1,4 +1,4 @@
-# Quran in Word - Installer Script
+# Quran in Office - Installer Script
 # One-click setup: Node.js check, npm install, cert, build, sideload
 
 $ErrorActionPreference = "Stop"
@@ -69,10 +69,10 @@ if ($LASTEXITCODE -ne 0) {
 Write-OK "Build berhasil."
 
 # ── 5. Sideload manifest into Word ────────────────────────────────
-Write-Step "Sideload manifest ke Microsoft Word..."
+Write-Step "Sideload manifest ke Microsoft Word atau PowerPoint..."
 npx --yes office-addin-sideload --manifest "$ProjectRoot\manifest.xml" 2>&1 | Out-Host
 if ($LASTEXITCODE -eq 0) {
-    Write-OK "Add-in disideload ke Word."
+    Write-OK "Add-in disideload ke Word dan PowerPoint."
 } else {
     Write-Host "    Sideload otomatis gagal. Anda bisa sideload manual:" -ForegroundColor Yellow
     Write-Host "    Word > Insert > Add-ins > My Add-ins > Upload My Add-in > pilih manifest.xml" -ForegroundColor Yellow
@@ -82,10 +82,10 @@ if ($LASTEXITCODE -eq 0) {
 $startScript = @"
 @echo off
 chcp 65001 >nul 2>&1
-title Quran in Word - Server
+title Quran in Office - Server
 echo.
-echo  Menjalankan server Quran in Word...
-echo  Buka Microsoft Word dan gunakan add-in Quran.
+echo  Menjalankan server Quran in Office...
+echo  Buka Microsoft Word atau PowerPoint dan gunakan add-in Quran.
 echo  Tekan Ctrl+C untuk berhenti.
 echo.
 cd /d "$ProjectRoot"
@@ -95,10 +95,10 @@ npx --yes serve dist -l 3000 --ssl-cert (office-addin-dev-certs cert) --ssl-key 
 $startBat = @"
 @echo off
 chcp 65001 >nul 2>&1
-title Quran in Word - Server
+title Quran in Office - Server
 echo.
-echo  Menjalankan server Quran in Word...
-echo  Buka Microsoft Word dan gunakan add-in Quran.
+echo  Menjalankan server Quran in Office...
+echo  Buka Microsoft Word atau PowerPoint dan gunakan add-in Quran.
 echo  Tekan Ctrl+C untuk berhenti.
 echo.
 cd /d "$ProjectRoot"
@@ -114,8 +114,8 @@ Write-Host "  Instalasi selesai!" -ForegroundColor Green
 Write-Host ""
 Write-Host "  Langkah selanjutnya:" -ForegroundColor White
 Write-Host "  1. Jalankan start-server.bat" -ForegroundColor White
-Write-Host "  2. Buka Microsoft Word" -ForegroundColor White
-Write-Host "  3. Klik tab 'Insert' > 'My Add-ins' > 'Quran in Word'" -ForegroundColor White
+Write-Host "  2. Buka Microsoft Word atau PowerPoint" -ForegroundColor White
+Write-Host "  3. Klik tab 'Insert' > 'My Add-ins' > 'Quran in Office'" -ForegroundColor White
 Write-Host ""
 Write-Host "  ═══════════════════════════════════════════" -ForegroundColor Green
 
