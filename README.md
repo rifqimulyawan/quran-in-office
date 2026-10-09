@@ -18,6 +18,6 @@ Web version (read-only, no install): https://quran.rmdigital.co.id/
 ## After installing
 
 1. Restart Word / PowerPoint
-2. Insert → My Add-ins → Shared Folder → **Quran in Office** → Add
+2. Insert → My Add-ins → Developer Add-ins → **Quran in Office** → Add
 
 Source code is maintained in a private repository — this repo publishes the manifest, install scripts and installers only.
