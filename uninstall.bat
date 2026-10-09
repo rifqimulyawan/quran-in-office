@@ -1,11 +1,11 @@
 @echo off
 chcp 65001 >nul 2>&1
-title Quran in Word - Uninstaller
+title Quran in Office - Uninstaller
 color 0C
 
 echo.
 echo  ╔═══════════════════════════════════════════════╗
-echo  ║       Quran in Word - Uninstaller              ║
+echo  ║       Quran in Office - Uninstaller              ║
 echo  ╚═══════════════════════════════════════════════╝
 echo.
 
