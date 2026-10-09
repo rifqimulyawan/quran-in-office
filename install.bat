@@ -1,11 +1,11 @@
 @echo off
 chcp 65001 >nul 2>&1
-title Quran in Word - Installer
+title Quran in Office - Installer
 color 0A
 
 echo.
 echo  ╔═══════════════════════════════════════════════╗
-echo  ║        Quran in Word - One-Click Installer     ║
+echo  ║        Quran in Office - One-Click Installer     ║
 echo  ╚═══════════════════════════════════════════════╝
 echo.
 
@@ -24,7 +24,7 @@ if %errorlevel% equ 0 (
     echo.
     echo  ╔═══════════════════════════════════════════════╗
     echo  ║  ✓ Instalasi selesai!                         ║
-    ║  Buka Microsoft Word, add-in sudah tersedia.   ║
+    ║  Buka Microsoft Word atau PowerPoint, add-in sudah tersedia.   ║
     ║  Jalankan start-server.bat untuk memulai.       ║
     echo  ╚═══════════════════════════════════════════════╝
 ) else (
