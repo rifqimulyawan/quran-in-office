@@ -75,7 +75,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-OK "Add-in disideload ke Word dan PowerPoint."
 } else {
     Write-Host "    Sideload otomatis gagal. Anda bisa sideload manual:" -ForegroundColor Yellow
-    Write-Host "    Word > Insert > Add-ins > My Add-ins > Upload My Add-in > pilih manifest.xml" -ForegroundColor Yellow
+    Write-Host "    Word/PowerPoint > Insert > My Add-ins > Upload My Add-in > pilih manifest.xml" -ForegroundColor Yellow
 }
 
 # ── 6. Create start-server script ─────────────────────────────────
@@ -115,7 +115,7 @@ Write-Host ""
 Write-Host "  Langkah selanjutnya:" -ForegroundColor White
 Write-Host "  1. Jalankan start-server.bat" -ForegroundColor White
 Write-Host "  2. Buka Microsoft Word atau PowerPoint" -ForegroundColor White
-Write-Host "  3. Klik tab 'Insert' > 'My Add-ins' > 'Quran in Office'" -ForegroundColor White
+Write-Host "  3. Insert > My Add-ins > tab 'Developer Add-ins' > 'Quran in Office' > Add" -ForegroundColor White
 Write-Host ""
 Write-Host "  ═══════════════════════════════════════════" -ForegroundColor Green
 
